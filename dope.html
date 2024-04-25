@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenithClient Download</title>
+    <style>
+        @font-face {
+            font-family: 'Dope';
+            src: url(fonts/minecraft.otf);
+        }
+
+        body {
+            background-image: url('https://cdn.discordapp.com/attachments/1222669383520747600/1232884897400750170/panorama_overlay.jpeg?ex=662b1509&is=6629c389&hm=a8b4e505e376d59bb4aed780c3573820561d48cb96947fa87a19061fc3c9917c&'); /* Replace 'your_image_url_here' with the actual URL of your image */
+            background-size: cover;
+            backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Dope';
+            padding: 60px;
+            margin: 0; /* Remove default body margin */
+            height: 200vh; /* Set body height to 100% of viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content horizontally and vertically */
+            align-items: center;
+            transition: background-size 0.3s ease-in-out; /* Add a smooth transition for the zoom effect */
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @font-face {
+            font-family: Mine;
+            src: url();
+        }
+
+        #myText {
+            font-size: 70px;
+            cursor: pointer;
+            margin-top: 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #myText span {
+            color: rgb(0, 102, 255);
+            text-shadow: 0 0 30px rgb(5, 163, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #myText2 {
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #modulelist {
+            font-size: 30;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #modulelist span {
+            color: rgb(0, 38, 255);
+            text-shadow: 0 0 30px rgb(38, 0, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #modulelist:hover span {
+            color: blue;
+            text-shadow: 0 0 50px blue; /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myText2 span {
+            color: rgb(4, 0, 255);
+            text-shadow: 0 0 30px rgb(4, 0, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #myText2:hover span {
+            color: rgb(225, 0, 255);
+            text-shadow: 0 0 50px rgb(225, 0, 255); /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myText:hover span {
+            color: rgb(255, 0, 212);
+            text-shadow: 0 0 50px rgb(204, 0, 255); /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myButton {
+            background-color: black;
+            color: rgb(255, 0, 212);
+            border: 2px solid rgb(255, 0, 242);
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: Dope;
+            outline: none;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgb(5, 1, 240);
+            margin-top: 20px;
+        }
+
+        #myButton:hover {
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 0 20px blue;
+            font-family: Dope;
+            border: 2px solid blue;
+            color: rgb(17, 0, 255);
+        }
+
+        #myButton2 {
+            background-color: black;
+            color: rgb(25, 0, 255);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            font-family: Dope;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgb(4, 0, 255);
+            margin-top: 20px;
+        }
+
+        #myButton2:hover {
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 0 20px blue;
+            font-family: Dope;
+            border: 2px solid blue;
+            color: rgb(17, 0, 255);
+        }
+
+        #description {
+            color: rgb(0, 255, 242);
+            text-shadow: 0 0 10px rgb(0, 38, 255); /* Red glow around the text */
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        #myImage {
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 20px;
+            border: 2px solid rgb(4, 0, 255); /* Red border around the image */
+            box-shadow: 0 0 10px rgb(0, 81, 255); /* Red glow around the image */
+        }
+
+    </style>
+<script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer="" data-domain="lonelyangel.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body>
+    <div id="container">
+        <p id="myText" onclick="location.href='....';">
+            <span>-</span>
+            <span>Z</span>
+            <span>e</span>
+            <span>n</span>
+            <span>i</span>
+            <span>t</span>
+            <span>h</span>
+            <span>: :</span>
+            <span>C</span>
+            <span>l</span>
+            <span>i</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+            <span>-</span>
+        </p>
+        <button id="myButton" onclick="FontFace('minecraft'); location.href='https://cdn.discordapp.com/attachments/1232887932143272137/1232890974754050078/Zenith_-_1.20.4.jar?ex=662b1ab2&is=6629c932&hm=b702076bace8ef3a79269e0309bddf89d64e12a268c9c65ce7bd1ea8de414008&';">Download Zenith</button>
+        <button id="myButton2" onclick="playSound(''); location.href='https://discord.gg/CuX89WXQEd';">Discord</button>
+        <div id="description">welcome to Zeniths Download page! (!!! INVITE ONLY !!!)</div>
+        <div id="description">Devs: Website - Angel \ ClientMain - Angel \ ClientHelpers - Chronos | Taco | GhostyKi | GoofyGuy</div>
+        <div id="description">Why Zenith? - because one: the autocrystal has a fast speed, the clickgui is easy, simple and fast to learn | Sorry For the stupid website, but its all i have at the moment</div>
+        <a href="" alt="Displayed Image"></a>
+    </div>
+    <script>
+        const myText = document.getElementById('myText');
+        const letters = myText.getElementsByTagName('span');
+
+        function playSound(soundUrl) {
+            const audio = new Audio(soundUrl);
+            audio.play();
+        }
+
+        function colorChange(index) {
+            setTimeout(() => {
+                letters[index].style.color = 'pink';
+                letters[index].style.textShadow = '0 0 20px white'; // Change glow color
+                letters[index].style.webkitTextStroke = '0 0 10px black'
+            }, index * 100);
+
+            setTimeout(() => {
+                letters[index].style.color = 'blue';
+                letters[index].style.textShadow = '0 0 20px blue'; // Reset glow color
+            }, (index + letters.length) * 100);
+            
+        }
+
+        function loopAnimation() {
+            for (let i = 0; i < letters.length; i++) {
+                colorChange(i);
+            }
+            setTimeout(loopAnimation, letters.length * 200); // Total time for one loop
+        }
+
+        loopAnimation();
+
+        const body = document.body;
+
+        body.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth - 0.5;
+            const mouseY = e.clientY / window.innerHeight - 0.5;
+
+            body.style.backgroundPosition = `${mouseX * 100}px ${mouseY * 100}px`;
+
+        });
+
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        backgroundMusic.play();
+
+        function showNotification() {
+            const notification = document.createElement('div');
+            notification.classList.add('notification');
+            notification.textContent = 'Welcome My Bio!';
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 5000); // Remove the notification after 5 seconds
+        }
+
+        showNotification();
+    </script>
+
+
+</body></html>
